@@ -1,3 +1,4 @@
+import ExperienceEducationSection from "./components/ExperienceEducationSection"
 import Header from "./components/Header"
 import Sidebar from "./components/Sidebar"
 import Title from "./components/title"
@@ -7,6 +8,7 @@ function App() {
     <div className="relative">
       <Sidebar />
       <Header />
+      <ExperienceEducationSection />
     {/* <div className="w-full h-fit bg-gradient-to-t from-slate-800 to-slate-600 p-5">
       <Title />
       <div className="flex items-center justify-center mt-5">

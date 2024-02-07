@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <>
       {/* container */}
-      <div className='h-screen bg-gradient-to-tr from-[#041116] via-[#121F23] to-[#2C3031] flex flex-col text-center justify-center items-center'>
+      <div id='header' className='h-screen bg-gradient-to-tr from-[#041116] via-[#121F23] to-[#2C3031] flex flex-col text-center justify-center items-center'>
         {/* Name */}
         <div className='text-[75px] text-white font-bold'>
           <span>Hello</span>, I'm Wisnu Andika
