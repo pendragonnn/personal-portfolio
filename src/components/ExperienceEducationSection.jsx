@@ -15,11 +15,11 @@ export default function ExperienceEducationSection() {
     <>
       <div id='experience' className='lg:h-screen bg-gradient-to-br from-[#041116] via-[#121F23] to-[#2C3031]'>
         {/* container */}
-        <div className='h-full flex items-center justify-center px-32 gap-7'>
+        <div className='h-full flex flex-col lg:flex-row items-center justify-center lg:px-32 px-10 gap-7 py-5 lg:py-0'>
           {/* experience section */}
-          <div className='w-1/2 px-3 border-r-2'>
+          <div className='lg:w-1/2 w-full md:px-3 lg:border-r-2'>
             {/* title */}
-            <div className='text-[52px] font-bold text-white mb-3'>
+            <div className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white mb-3'>
               Experience
             </div>
             {/* experience */}
@@ -27,11 +27,11 @@ export default function ExperienceEducationSection() {
               {experienceData.map(experience => (
                 <div key={experience.id} className='text-white'>
                   {/* experience month */}
-                  <div className='font-light text-xl'>
+                  <div className='font-light lg:text-xl text-base'>
                     {experience.month}
                   </div>
                   {/* experience title */}
-                  <div className='text-3xl font-semibold'>
+                  <div className='lg:text-3xl md:text-2xl text-xl font-semibold'>
                     {experience.title}
                   </div>
                 </div>
@@ -40,9 +40,9 @@ export default function ExperienceEducationSection() {
           </div>
 
           {/* education section */}
-          <div className='w-1/2 px-3'>
+          <div className='lg:w-1/2 w-full md:px-3'>
             {/* title */}
-            <div className='text-[52px] font-bold text-white mb-3'>
+            <div className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white my-3'>
               Education
             </div>
             {/* education */}
@@ -50,11 +50,11 @@ export default function ExperienceEducationSection() {
               {educationData.map(education => (
                 <div key={education.id} className='text-white'>
                   {/* education month */}
-                  <div className='font-light text-xl'>
+                  <div className='font-light lg:text-xl text-base'>
                     {education.month}
                   </div>
                   {/* education title */}
-                  <div className='text-3xl font-semibold'>
+                  <div className='lg:text-3xl md:text-2xl text-xl font-semibold'>
                     {education.title}
                   </div>
                 </div>
