@@ -1,5 +1,6 @@
 import ExperienceEducationSection from "./components/ExperienceEducationSection"
 import Header from "./components/Header"
+import PortfolioGallerySection from "./components/PortfolioGallerySection"
 import Sidebar from "./components/Sidebar"
 import Title from "./components/title"
 
@@ -9,6 +10,7 @@ function App() {
       <Sidebar />
       <Header />
       <ExperienceEducationSection />
+      <PortfolioGallerySection />
     {/* <div className="w-full h-fit bg-gradient-to-t from-slate-800 to-slate-600 p-5">
       <Title />
       <div className="flex items-center justify-center mt-5">
