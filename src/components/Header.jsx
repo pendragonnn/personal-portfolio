@@ -7,6 +7,15 @@ import react from '/logo/react.png'
 import tailwind from '/logo/tailwind.png'
 
 export default function Header() {
+  const logos = [
+    {id: 1, imageUrl: html, alt: 'html logo'},
+    {id: 2, imageUrl: css, alt: 'css logo'},
+    {id: 3, imageUrl: git, alt: 'git logo'},
+    {id: 4, imageUrl: js, alt: 'js logo'},
+    {id: 5, imageUrl: react, alt: 'react logo'},
+    {id: 6, imageUrl: tailwind, alt: 'tailwind logo'},
+  ]
+  
   return (
     <>
       {/* container */}
@@ -31,12 +40,9 @@ export default function Header() {
           </div>
           {/* logo */}
           <div className='flex items-center'>
-            <img src={html} alt="html logo" />
-            <img src={css} alt="css logo" />
-            <img src={js} alt="js logo" />
-            <img src={react} alt="react logo" />
-            <img src={git} alt="git logo" />
-            <img src={tailwind} alt="tailwind logo" />
+            {logos.map(logo => (
+              <img src={logo.imageUrl} alt={logo.alt} key={logo.id} />
+            ))}
           </div>
           
         </div>
