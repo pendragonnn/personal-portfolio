@@ -23,8 +23,8 @@ export default function Sidebar() {
       {/* Sidebar icon */}
       <div className='h-[500px] w-[78px] bg-white/20 rounded-tr-xl rounded-br-xl flex flex-col items-center justify-center gap-y-4'>
         {logos.map(logo => (
-          <a href={logo.href} target={logo.blank ? '_blank' : ''}>
-            <img className='w-[50px]' key={logo.index} src={logo.imageUrl}  />
+          <a href={logo.href} key={logo.id} target={logo.blank ? '_blank' : ''}>
+            <img className='w-[50px]' src={logo.imageUrl}  />
           </a>
         ))}
       </div>

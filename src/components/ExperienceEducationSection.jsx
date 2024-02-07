@@ -13,7 +13,7 @@ export default function ExperienceEducationSection() {
   ]
   return (
     <>
-      <div id='experience' className='h-screen bg-gradient-to-br from-[#041116] via-[#121F23] to-[#2C3031]'>
+      <div id='experience' className='lg:h-screen bg-gradient-to-br from-[#041116] via-[#121F23] to-[#2C3031]'>
         {/* container */}
         <div className='h-full flex items-center justify-center px-32 gap-7'>
           {/* experience section */}
