@@ -1,9 +1,11 @@
 import Header from "./components/Header"
+import Sidebar from "./components/Sidebar"
 import Title from "./components/title"
 
 function App() {
   return (
-    <>
+    <div className="relative">
+      <Sidebar />
       <Header />
     {/* <div className="w-full h-fit bg-gradient-to-t from-slate-800 to-slate-600 p-5">
       <Title />
@@ -29,7 +31,7 @@ function App() {
         </div>
       </div>
     </div> */}
-    </>
+    </div>
   )
 }
 
