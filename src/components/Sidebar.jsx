@@ -12,7 +12,7 @@ export default function Sidebar() {
     { id: 1, imageUrl: HomeLogo, href: '#header', blank: false },
     { id: 2, imageUrl: ExperienceLogo, href: '#experience', blank: false },
     { id: 3, imageUrl: PortfolioLogo, href: '#portfolio', blank: false},
-    { id: 4, imageUrl: MessageLogo, href: '#message', blank: false},
+    { id: 4, imageUrl: MessageLogo, href: '#contact', blank: false},
     { id: 5, imageUrl: CVLogo, href: '/cv/CVWisnuAndika.pdf', blank: true },
     { id: 6, imageUrl: GithubLogo, href: 'https://github.com/pendragonnn', blank: true },
     { id: 7, imageUrl: LinkedinLogo, href: 'https://linkedin.com/in/wisnuandika', blank: true },
