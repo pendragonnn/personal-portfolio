@@ -19,7 +19,7 @@ export default function Sidebar() {
   ]
 
   return (
-    <div className='fixed h-screen flex items-center bg-transparent'>
+    <div className='fixed h-screen flex items-center bg-transparent z-10'>
       {/* Sidebar icon */}
       <div className='h-[500px] w-[78px] bg-white/20 rounded-tr-xl rounded-br-xl flex flex-col items-center justify-center gap-y-4'>
         {logos.map(logo => (
