@@ -11,3 +11,23 @@ html {
     font-family: "Open Sans";
   }
 }
+
+.name::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url('/decoration/greenUnderline.png');
+  background-position: center;
+  background-size: contain;
+  z-index: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+@media (max-width: 1024px) { 
+  .name::after {
+    bottom: -20px;
+  }
+}
