@@ -24,7 +24,7 @@ export default function ContactSection() {
         {/* button container */}
         <div className='grid md:grid-cols-2 grid-cols-1 md:gap-x-5 gap-y-5 my-5'>
           <button className='bg-white font-bold rounded-full p-2 w-full' type='submit'>Send</button>
-          <Button className='bg-white font-bold rounded-full md:p-2 p-1 w-full flex items-center justify-center gap-2 text-black'>
+          <Button type='button' href='https://www.instagram.com/wisnu_andk/' target='_blank' className='bg-white font-bold rounded-full md:p-2 p-1 w-full flex items-center justify-center gap-2 text-black'>
             <img src={InstagramLogo} alt="instagram logo" className='md:h-[30px] h-[15px]' />
             <div>
               wisnu_andk
