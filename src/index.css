@@ -26,8 +26,56 @@ html {
   left: 0;
 }
 
+.experience::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url('/decoration/yellowUnderline.png');
+  background-position: center;
+  background-size: contain;
+  z-index: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+}
+
+.education::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url('/decoration/blueUnderline.png');
+  background-position: center;
+  background-size: contain;
+  z-index: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+
+.gradient-experience {
+  background: linear-gradient(60deg, #e6b754, #f0e6d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-education {
+  background: linear-gradient(60deg, #3DC7E5,  #c0d9de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 1024px) { 
   .name::after {
+    bottom: -20px;
+  }
+  
+  .experience::after {
+    bottom: -30px;
+  }
+  
+  .education::after {
     bottom: -20px;
   }
 }

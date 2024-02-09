@@ -13,25 +13,25 @@ export default function ExperienceEducationSection() {
   ]
   return (
     <>
-      <div id='experience' className='lg:h-screen bg-gradient-to-br from-[#041116] via-[#121F23] to-[#2C3031]'>
+      <div id='experience' className='h-fit bg-gradient-to-br from-[#041116] via-[#121F23] to-[#2C3031]'>
         {/* container */}
-        <div className='h-full flex flex-col lg:flex-row items-center justify-center lg:px-32 px-10 gap-7 py-5 lg:py-0'>
+        <div className='h-full flex flex-col lg:flex-row items-center justify-center lg:px-32 px-10 gap-7 lg:py-20 py-5'>
           {/* experience section */}
-          <div className='lg:w-1/2 w-full md:px-3 lg:border-r-2'>
+          <div className='lg:w-1/2 w-full md:px-3 lg:border-r-2 '>
             {/* title */}
-            <div className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white mb-3'>
+            <div className='lg:text-[52px] md:text-5xl text-3xl w-fit font-bold mb-7 text-white experience relative'>
               Experience
             </div>
             {/* experience */}
-            <div className='flex flex-col gap-y-10'>
+            <div className='flex flex-col gap-y-8'>
               {experienceData.map(experience => (
-                <div key={experience.id} className='text-white'>
+                <div key={experience.id}>
                   {/* experience month */}
-                  <div className='font-light lg:text-xl text-base'>
+                  <div className='font-light lg:text-xl text-base text-white'>
                     {experience.month}
                   </div>
                   {/* experience title */}
-                  <div className='lg:text-3xl md:text-2xl text-xl font-semibold'>
+                  <div className='lg:text-3xl md:text-2xl gradient-experience text-xl font-semibold'>
                     {experience.title}
                   </div>
                 </div>
@@ -42,19 +42,19 @@ export default function ExperienceEducationSection() {
           {/* education section */}
           <div className='lg:w-1/2 w-full md:px-3'>
             {/* title */}
-            <div className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white my-3'>
+            <div className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white mb-7 w-fit education relative'>
               Education
             </div>
             {/* education */}
-            <div className='flex flex-col gap-y-10'>
+            <div className='flex flex-col gap-y-8'>
               {educationData.map(education => (
-                <div key={education.id} className='text-white'>
+                <div key={education.id}>
                   {/* education month */}
-                  <div className='font-light lg:text-xl text-base'>
+                  <div className='font-light lg:text-xl text-base text-white'>
                     {education.month}
                   </div>
                   {/* education title */}
-                  <div className='lg:text-3xl md:text-2xl text-xl font-semibold'>
+                  <div className='lg:text-3xl md:text-2xl gradient-education text-xl font-semibold'>
                     {education.title}
                   </div>
                 </div>
