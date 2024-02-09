@@ -22,16 +22,18 @@ export default function PortfolioGallerySection() {
     { id: 6, title: 'Array Game', techStack: 'HTML, CSS, Bootstrap', imgSrc: arraygame, url: 'https://github.com/pendragonnn/Array-Game.git', liveDemo: true, liveDemoUrl: 'https://pendragonnn.github.io/Array-Game/' },
   ]
 
+  const duration = ["700", "900", "1200", "700", "900", "1200"]
+
   return (
     <div id='portfolio' className='h-fit bg-gradient-to-tr from-[#041116] via-[#121F23] to-[#2C3031] lg:px-8 px-8 py-16 flex flex-col justify-center items-center'>
       {/* title */}
-      <div className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white w-fit mb-7 relative portfolio'>
+      <div data-aos="zoom-in-down" className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white w-fit mb-7 relative portfolio'>
         Portfolio Gallery
       </div>
       {/* card */}
       <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-4 p-2 gap-6'>
         {portfolioData.map(portfolio => (
-          <div className='group hover:animate-pulse flex flex-col p-3 border hover:bg-white/10 border-dashed lg:min-h-[500px] min-h-[450px] hover:shadow-[0px_0px_30px_5px] hover:shadow-white/20 max-w-sm rounded-lg relative hover:scale-105 hover:duration-100' key={portfolio.id}>
+          <div data-aos="fade-up" data-aos-duration={duration[portfolio.id - 1]} className='group hover:animate-pulse flex flex-col p-3 border hover:bg-white/10 border-dashed lg:min-h-[500px] min-h-[450px] hover:shadow-[0px_0px_30px_5px] hover:shadow-white/20 max-w-sm rounded-lg relative hover:scale-105 hover:duration-100' key={portfolio.id}>
             {/* image container */}
             <img src={portfolio.imgSrc} alt="" className='object-cover hover:object-contain h-full rounded' />
             {/* title and tech stack */}

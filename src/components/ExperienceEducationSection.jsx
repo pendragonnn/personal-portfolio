@@ -19,13 +19,13 @@ export default function ExperienceEducationSection() {
           {/* experience section */}
           <div className='lg:w-1/2 w-full md:px-3 lg:border-r-2 '>
             {/* title */}
-            <div className='lg:text-[52px] md:text-5xl text-3xl w-fit font-bold mb-7 text-white experience relative'>
+            <div data-aos="fade-right" data-aos-duration="1000" className='lg:text-[52px] md:text-5xl text-3xl w-fit font-bold mb-7 text-white experience relative'>
               Experience
             </div>
             {/* experience */}
             <div className='flex flex-col gap-y-8'>
               {experienceData.map(experience => (
-                <div key={experience.id}>
+                <div data-aos="zoom-in-right" data-aos-duration="1000" key={experience.id}>
                   {/* experience month */}
                   <div className='font-light lg:text-xl text-base text-white'>
                     {experience.month}
@@ -42,13 +42,13 @@ export default function ExperienceEducationSection() {
           {/* education section */}
           <div className='lg:w-1/2 w-full md:px-3'>
             {/* title */}
-            <div className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white mb-7 w-fit education relative'>
+            <div data-aos="fade-left" data-aos-duration="1000" className='lg:text-[52px] md:text-5xl text-3xl font-bold text-white mb-7 w-fit education relative'>
               Education
             </div>
             {/* education */}
             <div className='flex flex-col gap-y-8'>
               {educationData.map(education => (
-                <div key={education.id}>
+                <div data-aos="zoom-in-left" data-aos-duration="1000" key={education.id}>
                   {/* education month */}
                   <div className='font-light lg:text-xl text-base text-white'>
                     {education.month}

@@ -17,12 +17,14 @@ export default function Header() {
     { id: 6, imageUrl: tailwind, alt: 'tailwind logo' },
   ]
 
+  const duration = ["500", "600", "700", "800", "900", "1000"]
+
   return (
     <>
       {/* container */}
       <div id='header' className='h-screen py-20 bg-gradient-to-tr from-[#041116] via-[#121F23] to-[#2C3031] flex flex-col text-center justify-center items-center'>
         {/* Name */}
-        <div className='lg:text-[52px] md:text-3xl flex items-center text-xl text-white font-bold'>
+        <div data-aos='fade-right' data-aos-duration="1000" className='lg:text-[52px] md:text-3xl flex items-center text-xl text-white font-bold'>
           <TypeAnimation sequence={[
             'Hello',
             1000,
@@ -49,22 +51,22 @@ export default function Header() {
         </div>
 
         {/* Description */}
-        <div className='lg:text-2xl md:text-xl text-base font-light text-white my-10 w-1/2 mx-auto'>
+        <div data-aos='fade-right' data-aos-duration="1000" className='lg:text-2xl md:text-xl text-base font-light text-white my-10 w-1/2 mx-auto'>
           An ungraduated student who have interest in frontend website roles
         </div>
 
-        <hr className='w-1/4' />
+        <hr data-aos='zoom-in' data-aos-duration="1000" className='w-1/4' />
 
         {/* Tech Stack */}
         <div className='flex flex-col justify-center items-center gap-2 mt-10'>
           {/* title */}
-          <div className='lg:text-3xl text-xl text-white font-bold'>
+          <div data-aos='fade-up' data-aos-duration="1000" className='lg:text-3xl text-xl text-white font-bold'>
             Tech Stack
           </div>
           {/* logo */}
           <div className='flex items-center justify-center flex-wrap w-1/2 md:w-fit'>
             {logos.map(logo => (
-              <img src={logo.imageUrl} alt={logo.alt} key={logo.id} className='lg:w-[70px] md:w-[50px] w-[35px] object-fill' />
+              <img data-aos='fade-up' data-aos-duration={duration[logo.id - 1]} src={logo.imageUrl} alt={logo.alt} key={logo.id} className='lg:w-[70px] md:w-[50px] w-[35px] object-fill' />
             ))}
           </div>
 
