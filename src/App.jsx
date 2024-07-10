@@ -1,4 +1,5 @@
 import ContactSection from "./components/ContactSection"
+import CVPortfolioSection from "./components/CVPortfolioSection"
 import ExperienceEducationSection from "./components/ExperienceEducationSection"
 import Header from "./components/Header"
 import PortfolioGallerySection from "./components/PortfolioGallerySection"
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <ExperienceEducationSection />
       <PortfolioGallerySection />
+      <CVPortfolioSection />
       <ContactSection />
     </div>
   )
